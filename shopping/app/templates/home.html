@@ -1,0 +1,12 @@
+<html>
+    <body><h1>USERS</h1>
+        {% if messages %}
+        {% for message in messages %}
+        {% if message.tags %}<script>alert("{{message}}")</script>{%endif%}{%endfor%}{%endif%}
+        <table>{%for user in users%}
+        
+            <td>{{user.username}}</td>
+            {%endfor%}</table>
+        
+    </body>
+</html>
